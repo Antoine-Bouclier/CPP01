@@ -1,5 +1,5 @@
 NAME = zombie
-SRC = Zombie.cpp newZombie.cpp randomChump.cpp main.cpp
+SRC = Zombie.cpp zombieHorde.cpp main.cpp
 
 CXX = c++
 
