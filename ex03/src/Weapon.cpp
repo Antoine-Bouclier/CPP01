@@ -6,7 +6,7 @@
 /*   By: abouclie <abouclie@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 13:20:52 by abouclie          #+#    #+#             */
-/*   Updated: 2025/10/24 13:40:12 by abouclie         ###   ########lyon.fr   */
+/*   Updated: 2025/10/31 14:33:56 by abouclie         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,15 +15,22 @@
 Weapon::Weapon(const std::string &weapon)
 {
 	this->setType(weapon);
+	std::cout
+		<< this->getType()
+		<< " created." <<
+	std::endl;
 }
 
 Weapon::~Weapon()
 {
-	std::cout << this->getType() << "destroyed." << std::endl;
+	std::cout
+		<< this->getType()
+		<< " destroyed." <<
+	std::endl;
 }
 void	Weapon::setType(const std::string &weapon)
 {
-	_type = weapon;
+	this->_type = weapon;
 }
 std::string	Weapon::getType() const
 {
