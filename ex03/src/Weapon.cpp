@@ -6,7 +6,7 @@
 /*   By: abouclie <abouclie@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 13:20:52 by abouclie          #+#    #+#             */
-/*   Updated: 2025/10/31 14:33:56 by abouclie         ###   ########lyon.fr   */
+/*   Updated: 2025/11/06 14:27:52 by abouclie         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ void	Weapon::setType(const std::string &weapon)
 {
 	this->_type = weapon;
 }
-std::string	Weapon::getType() const
+const std::string	&Weapon::getType() const
 {
 	return (_type);
 }
