@@ -6,7 +6,7 @@
 /*   By: abouclie <abouclie@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/04 18:54:13 by abouclie          #+#    #+#             */
-/*   Updated: 2025/11/06 09:44:32 by abouclie         ###   ########lyon.fr   */
+/*   Updated: 2025/11/06 14:31:20 by abouclie         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,10 +37,12 @@ int	main(int argc, char **argv)
 	buffer << ifs.rdbuf();
 	ifs.close();
 	content = buffer.str();
-	while ((pos = content.find(s1)) != std::string::npos)
+	pos = 0;
+	while ((pos = content.find(s1, pos)) != std::string::npos)
 	{
 		content.erase(pos, s1.length());
 		content.insert(pos, s2);
+		pos += s2.length();
 	}
 	filename += ".replace";
 	ofs.open(filename.c_str());
