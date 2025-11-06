@@ -6,7 +6,7 @@
 /*   By: abouclie <abouclie@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/02 12:36:14 by abouclie          #+#    #+#             */
-/*   Updated: 2025/10/24 11:58:51 by abouclie         ###   ########lyon.fr   */
+/*   Updated: 2025/11/06 10:11:49 by abouclie         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 Zombie::Zombie()
 {
-	std::cout << _name << " created." << std::endl;
+	std::cout << "zombie created." << std::endl;
 }
 
 Zombie::~Zombie()
