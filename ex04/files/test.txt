@@ -1,0 +1,11 @@
+Bonjour à tous,
+
+Il contient plusieurs mots, dont certains vont être remplacés.
+
+Par exemple, le mot "test" apparaît plusieurs fois :
+test test test
+
+Et parfois même dans une phrase plus longue :
+Ce test est un bon test pour tester ton programme.
+
+Bonne chance !
